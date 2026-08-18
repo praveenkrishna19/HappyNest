@@ -1,654 +1,654 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Happy Nest — Daycare & Early Learning</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-        <style>
-            /*:root{*/
-            /*  --sky: #BFEAFF;*/
-            /*  --sky-deep: #7DD6FF;*/
-            /*  --cream: #FFF9EF;*/
-            /*  --egg: #FFFFFF;*/
-            /*  --twig: #E8A24D;*/
-            /*  --twig-dark: #8B5E3C;*/
-            /*  --pine: #12966F;*/
-            /*  --pine-light: #2AC091;*/
-            /*  --sun: #FFCB3E;*/
-            /*  --coral: #FF6F61;*/
-            /*  --mint: #B7F0D3;*/
-            /*  --blush: #FFD3E0;*/
-            /*  --lavender: #DCCFFA;*/
-            /*  --ink: #2B3630;*/
-            /*  --radius-lg: 32px;*/
-            /*  --radius-md: 20px;*/
-            /*  --shadow: 0 12px 30px rgba(31,75,63,0.12);*/
-            /*}*/
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Nest — Daycare & Early Learning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  /*:root{*/
+  /*  --sky: #BFEAFF;*/
+  /*  --sky-deep: #7DD6FF;*/
+  /*  --cream: #FFF9EF;*/
+  /*  --egg: #FFFFFF;*/
+  /*  --twig: #E8A24D;*/
+  /*  --twig-dark: #8B5E3C;*/
+  /*  --pine: #12966F;*/
+  /*  --pine-light: #2AC091;*/
+  /*  --sun: #FFCB3E;*/
+  /*  --coral: #FF6F61;*/
+  /*  --mint: #B7F0D3;*/
+  /*  --blush: #FFD3E0;*/
+  /*  --lavender: #DCCFFA;*/
+  /*  --ink: #2B3630;*/
+  /*  --radius-lg: 32px;*/
+  /*  --radius-md: 20px;*/
+  /*  --shadow: 0 12px 30px rgba(31,75,63,0.12);*/
+  /*}*/
+  
+ :root{
+  --sky: #CDE7FF;          /* Soft baby blue */
+  --sky-deep: #8BC9FF;     /* Medium blue */
+  --cream: #FFF7F0;        /* Warm cream */
+  --egg: #FFFFFF;          /* Pure white */
+  --twig: #E4A76D;         /* Soft golden brown */
+  --twig-dark: #9A6B42;    /* Deep warm brown */
+  --pine: #3BAA8F;         /* Calm teal green */
+  --pine-light: #55C7A8;   /* Light teal */
+  --sun: #FFD76B;          /* Soft sunshine yellow */
+  --coral: #FF8A80;        /* Gentle coral */
+  --mint: #CFF7E8;         /* Light mint */
+  --blush: #FFE1EB;        /* Baby pink */
+  --lavender: #E5D9FF;     /* Soft lavender */
+  --ink: #2F3A3D;          /* Deep charcoal */
+  --radius-lg: 32px;
+  --radius-md: 20px;
+  --shadow: 0 12px 30px rgba(31,75,63,0.12);
+}
 
-            :root{
-                --sky: #CDE7FF;          /* Soft baby blue */
-                --sky-deep: #8BC9FF;     /* Medium blue */
-                --cream: #FFF7F0;        /* Warm cream */
-                --egg: #FFFFFF;          /* Pure white */
-                --twig: #E4A76D;         /* Soft golden brown */
-                --twig-dark: #9A6B42;    /* Deep warm brown */
-                --pine: #3BAA8F;         /* Calm teal green */
-                --pine-light: #55C7A8;   /* Light teal */
-                --sun: #FFD76B;          /* Soft sunshine yellow */
-                --coral: #FF8A80;        /* Gentle coral */
-                --mint: #CFF7E8;         /* Light mint */
-                --blush: #FFE1EB;        /* Baby pink */
-                --lavender: #E5D9FF;     /* Soft lavender */
-                --ink: #2F3A3D;          /* Deep charcoal */
-                --radius-lg: 32px;
-                --radius-md: 20px;
-                --shadow: 0 12px 30px rgba(31,75,63,0.12);
-            }
 
+  *{ box-sizing: border-box; margin:0; padding:0; }
+  html{ scroll-behavior: smooth; }
+  body{
+    background: linear-gradient(180deg, #FFFFFF 0%, var(--cream) 50%, var(--lavender) 100%);
+  color: var(--ink);
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  }
+  h1,h2,h3,h4{
+    font-family: 'Baloo 2', cursive;
+    color: var(--pine);
+    line-height: 1.15;
+  }
+  .eyebrow{
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.72rem;
+    color: var(--twig);
+    font-weight: 700;
+  }
+  a{ color: inherit; text-decoration: none; }
+  img{ max-width:100%; display:block; }
+  .wrap{ max-width: 1180px; margin: 0 auto; padding: 0 32px; }
 
-            *{ box-sizing: border-box; margin:0; padding:0; }
-            html{ scroll-behavior: smooth; }
-            body{
-                background: linear-gradient(180deg, #FFFFFF 0%, var(--cream) 50%, var(--lavender) 100%);
-                color: var(--ink);
-                font-family: 'Nunito', sans-serif;
-                line-height: 1.6;
-                overflow-x: hidden;
-            }
-            h1,h2,h3,h4{
-                font-family: 'Baloo 2', cursive;
-                color: var(--pine);
-                line-height: 1.15;
-            }
-            .eyebrow{
-                font-family: 'Space Mono', monospace;
-                text-transform: uppercase;
-                letter-spacing: 0.14em;
-                font-size: 0.72rem;
-                color: var(--twig);
-                font-weight: 700;
-            }
-            a{ color: inherit; text-decoration: none; }
-            img{ max-width:100%; display:block; }
-            .wrap{ max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+  /* ---------- ENTRANCE ANIMATIONS ---------- */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.92); }
+    to { opacity: 1; transform: scale(1); }
+  }
 
-            /* ---------- ENTRANCE ANIMATIONS ---------- */
-            @keyframes fadeInUp {
-                from { opacity: 0; transform: translateY(24px); }
-                to { opacity: 1; transform: translateY(0); }
-            }
-            @keyframes scaleIn {
-                from { opacity: 0; transform: scale(0.92); }
-                to { opacity: 1; transform: scale(1); }
-            }
+  .animate-fade-up { animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
+  .animate-scale-in { animation: scaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
+  
+  .delay-1 { animation-delay: 0.15s; }
+  .delay-2 { animation-delay: 0.3s; }
+  .delay-3 { animation-delay: 0.45s; }
 
-            .animate-fade-up { animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
-            .animate-scale-in { animation: scaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
+  @media (prefers-reduced-motion: reduce){
+    *{ animation: none !important; transition: none !important; }
+    .animate-fade-up, .animate-scale-in { animation: none !important; }
+  }
 
-            .delay-1 { animation-delay: 0.15s; }
-            .delay-2 { animation-delay: 0.3s; }
-            .delay-3 { animation-delay: 0.45s; }
+  /* ---------- HEADER ---------- */
+  header{
+    position: sticky; top:0; z-index: 50;
+    /*background: rgba(251,243,226,0.92);*/
+    /*backdrop-filter: blur(8px);*/
+    /*border-bottom: 1px solid rgba(139,94,60,0.15);*/
+    background: linear-gradient(
+    135deg,
+    var(--cream) 0%,
+    var(--mint) 40%,
+    var(--sky) 100%
+  );
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(154,107,66,0.15);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content: space-between;
+    padding: 12px 32px;
+    max-width: 1180px; margin: 0 auto;
+  }
+  .logo{ display:flex; align-items:center; gap:12px; cursor: pointer; }
+  .logo:hover .logo-mark { animation: nestWobble 0.6s ease-in-out infinite alternate; }
+  
+  @keyframes nestWobble {
+    0% { transform: rotate(-3deg) scale(1.02); }
+    100% { transform: rotate(3deg) scale(1.02); }
+  }
 
-            @media (prefers-reduced-motion: reduce){
-                *{ animation: none !important; transition: none !important; }
-                .animate-fade-up, .animate-scale-in { animation: none !important; }
-            }
+  .logo-mark{ width:56px; height:56px; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .logo-text-group{ display: flex; flex-direction: column; }
+  .logo-text{ font-family:'Baloo 2'; font-weight:800; font-size:1.5rem; color: #1c3d5a; line-height: 1; }
+  .logo-caption{ font-size: 0.65rem; font-weight: 700; color: #3182ce; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 4px; }
+  .nav-links{ display:flex; gap:28px; font-weight:700; font-size:0.95rem; align-items: center; }
+  .nav-links a{ color: var(--twig-dark); position:relative; transition: color 0.2s ease; }
+  
+  .nav-links a::after {
+    content: '';
+    position: absolute; bottom: -4px; left: 0;
+    width: 100%; height: 2px;
+    background: var(--coral);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.25s ease;
+  }
+  .nav-links a:hover { color: var(--coral); }
+  .nav-links a:hover::after { transform: scaleX(1); transform-origin: left; }
+  
+  .nav-cta{
+    background: var(--pine);
+    color: var(--egg) !important;
+    padding: 11px 22px;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 0.92rem;
+    box-shadow: var(--shadow);
+    transition: transform .2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background .2s ease, box-shadow .2s ease !important;
+  }
+  .nav-cta::after { display: none !important; }
+  .nav-cta:hover{ transform: translateY(-2px) scale(1.03); background: var(--pine-light); box-shadow: 0 14px 26px rgba(18,150,111,0.25); }
 
-            /* ---------- HEADER ---------- */
-            header{
-                position: sticky; top:0; z-index: 50;
-                /*background: rgba(251,243,226,0.92);*/
-                /*backdrop-filter: blur(8px);*/
-                /*border-bottom: 1px solid rgba(139,94,60,0.15);*/
-                background: linear-gradient(
-                    135deg,
-                    var(--cream) 0%,
-                    var(--mint) 40%,
-                    var(--sky) 100%
-                );
-                backdrop-filter: blur(10px);
-                border-bottom: 1px solid rgba(154,107,66,0.15);
-            }
-            .nav{
-                display:flex; align-items:center; justify-content: space-between;
-                padding: 12px 32px;
-                max-width: 1180px; margin: 0 auto;
-            }
-            .logo{ display:flex; align-items:center; gap:12px; cursor: pointer; }
-            .logo:hover .logo-mark { animation: nestWobble 0.6s ease-in-out infinite alternate; }
+  /* ---------- HERO ---------- */
+  .hero{
+    position: relative;
+    padding: 76px 32px 60px;
+    background: radial-gradient(60% 60% at 82% 8%, var(--sky) 0%, transparent 70%), var(--cream);
+  }
+  .hero-grid{
+    max-width: 1180px; margin: 0 auto;
+    display:grid; grid-template-columns: 1.05fr 0.95fr;
+    gap: 40px; align-items:center;
+  }
+  .hero h1{
+    font-size: clamp(2.6rem, 5vw, 3.9rem);
+    font-weight: 800;
+    margin: 14px 0 10px;
+    color: #1c3d5a;
+  }
+  .hero h1 .accent{ color: var(--coral); }
+  .hero p.tagline{ font-family: 'Baloo 2', cursive; font-size: 1.25rem; color: #2b6cb0; font-weight: 600; margin-bottom: 20px; }
+  .hero p.lead{ font-size: 1.15rem; max-width: 480px; color: #3f4e48; margin-bottom: 30px; }
+  .hero-ctas{ display:flex; gap:14px; flex-wrap: wrap; }
 
-            @keyframes nestWobble {
-                0% { transform: rotate(-3deg) scale(1.02); }
-                100% { transform: rotate(3deg) scale(1.02); }
-            }
+  .nest-float { width: 100%; max-width: 440px; height: auto; animation: mainBob 6s ease-in-out infinite; }
+  @keyframes mainBob{ 0%,100%{ transform: translateY(0px);} 50%{ transform: translateY(-16px);} }
 
-            .logo-mark{ width:56px; height:56px; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-            .logo-text-group{ display: flex; flex-direction: column; }
-            .logo-text{ font-family:'Baloo 2'; font-weight:800; font-size:1.5rem; color: #1c3d5a; line-height: 1; }
-            .logo-caption{ font-size: 0.65rem; font-weight: 700; color: #3182ce; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 4px; }
-            .nav-links{ display:flex; gap:28px; font-weight:700; font-size:0.95rem; align-items: center; }
-            .nav-links a{ color: var(--twig-dark); position:relative; transition: color 0.2s ease; }
+  .nest-float:hover .chick-left { animation: individualPeepLeft 0.5s ease alternate infinite; }
+  .nest-float:hover .chick-center { animation: individualPeepCenter 0.4s ease alternate infinite; }
+  .nest-float:hover .chick-right { animation: individualPeepRight 0.6s ease alternate infinite; }
+  
+  @keyframes individualPeepLeft { to { transform: translateY(-8px) scale(1.02); transform-origin: 172px 272px; } }
+  @keyframes individualPeepCenter { to { transform: translateY(-12px) scale(1.03); transform-origin: 230px 262px; } }
+  @keyframes individualPeepRight { to { transform: translateY(-7px) scale(1.02); transform-origin: 296px 276px; } }
 
-            .nav-links a::after {
-                content: '';
-                position: absolute; bottom: -4px; left: 0;
-                width: 100%; height: 2px;
-                background: var(--coral);
-                transform: scaleX(0);
-                transform-origin: right;
-                transition: transform 0.25s ease;
-            }
-            .nav-links a:hover { color: var(--coral); }
-            .nav-links a:hover::after { transform: scaleX(1); transform-origin: left; }
+  .trust-strip{
+    margin-top: 56px;
+    display:grid; grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+    padding-top: 34px;
+    border-top: 1px solid rgba(139,94,60,0.2);
+  }
+  .trust-item { transition: transform 0.2s ease; }
+  .trust-item:hover { transform: translateY(-3px); }
+  .trust-item .num{ font-family:'Baloo 2'; font-weight:800; font-size:1.9rem; color: var(--pine); }
+  .trust-item .label{ font-size:0.85rem; color: var(--twig-dark); font-weight:700; }
 
-            .nav-cta{
-                background: var(--pine);
-                color: var(--egg) !important;
-                padding: 11px 22px;
-                border-radius: 999px;
-                font-weight: 800;
-                font-size: 0.92rem;
-                box-shadow: var(--shadow);
-                transition: transform .2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background .2s ease, box-shadow .2s ease !important;
-            }
-            .nav-cta::after { display: none !important; }
-            .nav-cta:hover{ transform: translateY(-2px) scale(1.03); background: var(--pine-light); box-shadow: 0 14px 26px rgba(18,150,111,0.25); }
+  /* ---------- SECTIONS ---------- */
+  section{ padding: 90px 0; }
+  .section-head{ max-width: 620px; margin-bottom: 52px; }
+  .section-head h2{ font-size: clamp(2rem, 3.4vw, 2.6rem); margin-top:10px; }
+  .section-head p{ color:#4b584f; margin-top: 12px; font-size:1.05rem; }
+  .center{ text-align:center; margin-left:auto; margin-right:auto; }
 
-            /* ---------- HERO ---------- */
-            .hero{
-                position: relative;
-                padding: 76px 32px 60px;
-                background: radial-gradient(60% 60% at 82% 8%, var(--sky) 0%, transparent 70%), var(--cream);
-            }
-            .hero-grid{
-                max-width: 1180px; margin: 0 auto;
-                display:grid; grid-template-columns: 1.05fr 0.95fr;
-                gap: 40px; align-items:center;
-            }
-            .hero h1{
-                font-size: clamp(2.6rem, 5vw, 3.9rem);
-                font-weight: 800;
-                margin: 14px 0 10px;
-                color: #1c3d5a;
-            }
-            .hero h1 .accent{ color: var(--coral); }
-            .hero p.tagline{ font-family: 'Baloo 2', cursive; font-size: 1.25rem; color: #2b6cb0; font-weight: 600; margin-bottom: 20px; }
-            .hero p.lead{ font-size: 1.15rem; max-width: 480px; color: #3f4e48; margin-bottom: 30px; }
-            .hero-ctas{ display:flex; gap:14px; flex-wrap: wrap; }
+  /* ---------- PROGRAMS ---------- */
+  .programs{ background: var(--sky); border-radius: 60px; margin: 0 20px; }
+  .egg-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-bottom: 50px; }
+  .egg-card{
+    background: var(--egg);
+    border-radius: 100px 100px 26px 26px;
+    padding: 46px 24px 30px;
+    text-align:center;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+  }
+  .egg-card:hover{ transform: translateY(-10px) rotate(-1.5deg); box-shadow: 0 22px 40px rgba(31,75,63,0.18); }
+  
+  .egg-icon{ width: 64px; height:64px; margin: 0 auto 18px; border-radius: 50%; display:flex; align-items:center; justify-content:center; font-size: 1.7rem; transition: transform 0.3s ease; }
+  .egg-card:hover .egg-icon { transform: scale(1.15) rotate(10deg); }
+  .egg-card h3{ font-size: 1.25rem; margin-bottom:6px; }
+  .egg-age{ font-family:'Space Mono'; font-size:0.75rem; color: var(--twig); font-weight:700; margin-bottom:12px; }
+  .egg-card p{ font-size:0.92rem; color:#54615a; }
 
-            .nest-float { width: 100%; max-width: 440px; height: auto; animation: mainBob 6s ease-in-out infinite; }
-            @keyframes mainBob{ 0%,100%{ transform: translateY(0px);} 50%{ transform: translateY(-16px);} }
+  /* ---------- TIMELINE SCHEDULE ---------- */
+  .schedule-container { background: var(--egg); border-radius: var(--radius-lg); padding: 45px; box-shadow: var(--shadow); max-width: 900px; margin: 0 auto; }
+  .schedule-container h3 { font-size: 1.75rem; text-align: center; margin-bottom: 30px; }
+  .day-timeline{ position:relative; }
+  .timeline-track{ position:relative; padding-left: 30px; border-left: 3px dashed var(--twig); }
+  .tl-item{ position:relative; padding: 0 0 32px 26px; transition: transform 0.2s ease; }
+  .tl-item:last-child{ padding-bottom:0; }
+  .tl-item:hover { transform: translateX(6px); }
 
-            .nest-float:hover .chick-left { animation: individualPeepLeft 0.5s ease alternate infinite; }
-            .nest-float:hover .chick-center { animation: individualPeepCenter 0.4s ease alternate infinite; }
-            .nest-float:hover .chick-right { animation: individualPeepRight 0.6s ease alternate infinite; }
+  .tl-dot{
+    position:absolute; left:-42px; top:2px;
+    width:16px; height:16px; border-radius:50%;
+    background: var(--sun); border:3px solid var(--egg);
+    box-shadow: 0 0 0 3px var(--twig);
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .tl-item:hover .tl-dot { background: var(--coral); transform: scale(1.2); }
+  .tl-time{ font-family:'Space Mono'; font-size:0.85rem; color: var(--coral); font-weight:700; background: var(--cream); padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 6px; }
+  .tl-item h4{ font-size:1.25rem; margin: 2px 0 4px; transition: color 0.2s ease; }
+  .tl-item:hover h4 { color: var(--pine); }
+  .tl-item p{ color:#54615a; font-size:0.95rem; }
 
-            @keyframes individualPeepLeft { to { transform: translateY(-8px) scale(1.02); transform-origin: 172px 272px; } }
-            @keyframes individualPeepCenter { to { transform: translateY(-12px) scale(1.03); transform-origin: 230px 262px; } }
-            @keyframes individualPeepRight { to { transform: translateY(-7px) scale(1.02); transform-origin: 296px 276px; } }
+  /* ---------- ABOUT US ---------- */
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+  .about-badge-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .about-badge { background: var(--egg); padding: 24px; border-radius: var(--radius-md); border: 1px solid rgba(139,94,60,0.1); text-align: center; transition: transform 0.2s ease; }
+  .about-badge:hover { transform: scale(1.03); }
+  .about-badge .icon { font-size: 2rem; margin-bottom: 8px; display: block; }
+  .about-badge h3 { font-size: 1.1rem; color: var(--twig-dark); }
 
-            .trust-strip{
-                margin-top: 56px;
-                display:grid; grid-template-columns: repeat(4,1fr);
-                gap: 24px;
-                padding-top: 34px;
-                border-top: 1px solid rgba(139,94,60,0.2);
-            }
-            .trust-item { transition: transform 0.2s ease; }
-            .trust-item:hover { transform: translateY(-3px); }
-            .trust-item .num{ font-family:'Baloo 2'; font-weight:800; font-size:1.9rem; color: var(--pine); }
-            .trust-item .label{ font-size:0.85rem; color: var(--twig-dark); font-weight:700; }
+  /* ---------- TESTIMONIALS ---------- */
+  .testimonials{ background: var(--pine); border-radius: 60px; margin: 0 20px; color: var(--egg); }
+  .testimonials .section-head h2, .testimonials .eyebrow{ color: var(--egg); }
+  .testimonials .eyebrow{ color: var(--sun); }
+  .testi-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap:24px; }
+  .testi-card{ background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius-md); padding: 28px; transition: background 0.2s ease, transform 0.2s ease; }
+  .testi-card:hover { background: rgba(255,255,255,0.1); transform: scale(1.02); }
+  .testi-card p.quote{ font-size:1rem; margin-bottom:18px; color: #EAF3EE; font-style: italic; }
+  .testi-name{ font-weight:800; font-family:'Baloo 2'; color: var(--sun); }
+  .testi-role{ font-size:0.8rem; color: var(--sky); opacity:0.85; }
 
-            /* ---------- SECTIONS ---------- */
-            section{ padding: 90px 0; }
-            .section-head{ max-width: 620px; margin-bottom: 52px; }
-            .section-head h2{ font-size: clamp(2rem, 3.4vw, 2.6rem); margin-top:10px; }
-            .section-head p{ color:#4b584f; margin-top: 12px; font-size:1.05rem; }
-            .center{ text-align:center; margin-left:auto; margin-right:auto; }
+  /* ---------- CONTACT & TOUR ---------- */
+  .contact-wrap{ display:grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
+  .contact-card{ background: var(--egg); border-radius: var(--radius-lg); padding: 40px; box-shadow: var(--shadow); transition: transform 0.3s ease; }
+  .contact-card:hover { transform: translateY(-2px); }
+  .info-group { margin-top: 24px; }
+  .info-item { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+  
+  .info-icon { font-size: 1.3rem; background: var(--sky); width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .info-item:hover .info-icon { transform: scale(1.12) rotate(-8deg); background: var(--sky-deep); }
+  .info-details p { font-size: 0.85rem; color: #606060; }
+  .info-details strong { font-size: 1.05rem; }
+  .info-details a { transition: color 0.2s ease; }
+  .info-details a:hover { color: var(--coral); }
 
-            /* ---------- PROGRAMS ---------- */
-            .programs{ background: var(--sky); border-radius: 60px; margin: 0 20px; }
-            .egg-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-bottom: 50px; }
-            .egg-card{
-                background: var(--egg);
-                border-radius: 100px 100px 26px 26px;
-                padding: 46px 24px 30px;
-                text-align:center;
-                box-shadow: var(--shadow);
-                transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
-            }
-            .egg-card:hover{ transform: translateY(-10px) rotate(-1.5deg); box-shadow: 0 22px 40px rgba(31,75,63,0.18); }
+  .form-group { margin-bottom: 18px; }
+  .form-group label { display: block; font-weight: 700; margin-bottom: 6px; font-size: 0.9rem; }
+  .form-control { width: 100%; padding: 12px 16px; border: 2px solid #e2e8f0; border-radius: var(--radius-md); font-family: inherit; font-size: 0.95rem; transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
+  .form-control:focus { outline: none; border-color: var(--pine); box-shadow: 0 0 0 4px rgba(18,150,111,0.12); transform: translateX(2px); }
+  
+  .btn-submit { background: var(--pine); color: #fff; width: 100%; padding: 14px; border: none; border-radius: 999px; font-family: 'Baloo 2'; font-size: 1.15rem; font-weight: 700; cursor: pointer; box-shadow: 0 8px 20px rgba(18,150,111,0.2); transition: background .2s ease, transform .2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow .2s ease; }
+  .btn-submit:hover { background: var(--pine-light); transform: translateY(-2px); box-shadow: 0 12px 24px rgba(18,150,111,0.3); }
 
-            .egg-icon{ width: 64px; height:64px; margin: 0 auto 18px; border-radius: 50%; display:flex; align-items:center; justify-content:center; font-size: 1.7rem; transition: transform 0.3s ease; }
-            .egg-card:hover .egg-icon { transform: scale(1.15) rotate(10deg); }
-            .egg-card h3{ font-size: 1.25rem; margin-bottom:6px; }
-            .egg-age{ font-family:'Space Mono'; font-size:0.75rem; color: var(--twig); font-weight:700; margin-bottom:12px; }
-            .egg-card p{ font-size:0.92rem; color:#54615a; }
+  footer { background: var(--ink); color: #b3c3ba; padding: 45px 0; font-size: 0.9rem; text-align: center; }
+  footer p { margin-top: 6px; }
+  footer a:hover { color: var(--sun); }
 
-            /* ---------- TIMELINE SCHEDULE ---------- */
-            .schedule-container { background: var(--egg); border-radius: var(--radius-lg); padding: 45px; box-shadow: var(--shadow); max-width: 900px; margin: 0 auto; }
-            .schedule-container h3 { font-size: 1.75rem; text-align: center; margin-bottom: 30px; }
-            .day-timeline{ position:relative; }
-            .timeline-track{ position:relative; padding-left: 30px; border-left: 3px dashed var(--twig); }
-            .tl-item{ position:relative; padding: 0 0 32px 26px; transition: transform 0.2s ease; }
-            .tl-item:last-child{ padding-bottom:0; }
-            .tl-item:hover { transform: translateX(6px); }
+  @media(max-width: 992px){
+    .hero-grid, .contact-wrap, .about-grid { grid-template-columns: 1fr; }
+    .egg-grid, .testi-grid { grid-template-columns: 1fr; }
+    .trust-strip { grid-template-columns: repeat(2, 2fr); }
+  }
+</style>
+</head>
+<body>
 
-            .tl-dot{
-                position:absolute; left:-42px; top:2px;
-                width:16px; height:16px; border-radius:50%;
-                background: var(--sun); border:3px solid var(--egg);
-                box-shadow: 0 0 0 3px var(--twig);
-                transition: background 0.2s ease, transform 0.2s ease;
-            }
-            .tl-item:hover .tl-dot { background: var(--coral); transform: scale(1.2); }
-            .tl-time{ font-family:'Space Mono'; font-size:0.85rem; color: var(--coral); font-weight:700; background: var(--cream); padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 6px; }
-            .tl-item h4{ font-size:1.25rem; margin: 2px 0 4px; transition: color 0.2s ease; }
-            .tl-item:hover h4 { color: var(--pine); }
-            .tl-item p{ color:#54615a; font-size:0.95rem; }
+  <header>
+    <div class="nav">
+      <div class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+        <!-- SVG Vector Layout of Happy Nest Daycare Brand Identity -->
+        <svg class="logo-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22 48 L50 20 L78 48 L71 48 L71 78 L29 78 L29 48 Z" fill="#FFFDF9" stroke="#5cbbf2" stroke-width="2.5"/>
+          <path d="M18 50 L50 17 L82 50" stroke="#5cbbf2" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="44" y="40" width="12" height="12" rx="1.5" fill="#5cbbf2"/>
+          <path d="M44 46 H56 M50 40 V52" stroke="#FFFDF9" stroke-width="1.2"/>
+          <path d="M50 31 C48.5 28.5 45.5 28.5 45.5 31 C45.5 33.5 50 36.5 50 36.5 C50 36.5 54.5 33.5 54.5 31 C54.5 28.5 51.5 28.5 50 31 Z" fill="#ff6b81"/>
+          <path d="M14 42 Q22 55 28 62" stroke="#8a5a36" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M16 46 Q13 44 15 41 Z" fill="#7ebd41"/>
+          <path d="M22 68 C22 84, 78 84, 78 68 C74 62, 26 62, 22 68 Z" fill="#dda86d" stroke="#784a25" stroke-width="2.5"/>
+          <path d="M24 69 Q50 82 76 69 M27 73 Q50 85 73 73" stroke="#784a25" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="37" cy="61" r="10" fill="#ff8da1"/>
+          <path d="M28 60 Q23 61 28 67 Z" fill="#ff6b81"/>
+          <circle cx="34" cy="58" r="1" fill="#222"/>
+          <polygon points="35,60 39,59 36,62" fill="#ffb81c"/>
+          <circle cx="50" cy="59" r="11" fill="#ffd13b"/>
+          <circle cx="46" cy="56" r="1.2" fill="#222"/>
+          <circle cx="54" cy="56" r="1.2" fill="#222"/>
+          <polygon points="48,59 52,59 50,62" fill="#ff6b81"/>
+          <circle cx="63" cy="61" r="10" fill="#69c5f0"/>
+          <path d="M72 60 Q77 61 72 67 Z" fill="#3197d6"/>
+          <circle cx="61" cy="58" r="1" fill="#222"/>
+          <polygon points="61,60 65,59 62,62" fill="#dda86d"/>
+        </svg>
+        <div class="logo-text-group">
+          <span class="logo-text">Happy Nest</span>
+          <span class="logo-caption">Daycare</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#programs">Programs</a>
+        <a href="#about">About Us</a>
+        <!--<a href="#testimonials">Testimonials</a>-->
+        <a href="#tour" class="nav-cta">Book a Tour</a>
+      </nav>
+    </div>
+  </header>
 
-            /* ---------- ABOUT US ---------- */
-            .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-            .about-badge-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-            .about-badge { background: var(--egg); padding: 24px; border-radius: var(--radius-md); border: 1px solid rgba(139,94,60,0.1); text-align: center; transition: transform 0.2s ease; }
-            .about-badge:hover { transform: scale(1.03); }
-            .about-badge .icon { font-size: 2rem; margin-bottom: 8px; display: block; }
-            .about-badge h3 { font-size: 1.1rem; color: var(--twig-dark); }
+  <section id="home" class="hero">
+    <div class="hero-grid">
+      <div class="hero-content align-fade-up">
+        <span class="eyebrow">Welcome to Happy Nest</span>
+        <h1>A Nurturing Space to <span class="accent">Grow &amp; Shine</span></h1>
+        <p class="tagline">“A Happy Place to Grow, Learn &amp; Shine”</p>
+        <p class="lead">We provide a secure, affectionate, and enriching learning atmosphere that makes early education feel like a secondary home base.</p>
+        <div class="hero-ctas">
+          <a href="#tour" class="btn-primary">Schedule a Tour</a>
+          <a href="#programs" class="btn-ghost">Our Schedule</a>
+        </div>
+        <div class="trust-strip">
+          <div class="trust-item"><p class="num">100%</p><p class="label">Certified Care</p></div>
+          <div class="trust-item"><p class="num">1:5</p><p class="label">Infant Ratio</p></div>
+          <div class="trust-item"><p class="num">Safe</p><p class="label">Fenced Yard</p></div>
+          <div class="trust-item"><p class="num">Healthy</p><p class="label">Nutritious Meals</p></div>
+        </div>
+      </div>
+      
+      <div class="hero-art animate-scale-in delay-1">
+        <svg class="nest-float" viewBox="0 0 460 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of three chicks in a nest">
+          <circle cx="330" cy="80" r="60" fill="var(--sun)" opacity="0.9"></circle>
+          <g stroke="var(--sun)" stroke-width="4" stroke-linecap="round" opacity="0.7">
+            <line x1="330" y1="0" x2="330" y2="18"></line>
+            <line x1="410" y1="30" x2="398" y2="42"></line>
+            <line x1="440" y1="80" x2="422" y2="80"></line>
+          </g>
+          <ellipse cx="230" cy="330" rx="190" ry="55" fill="var(--twig)" opacity="0.16"></ellipse>
+          <path d="M60 320 Q100 250 230 250 Q360 250 400 320 Q360 300 230 300 Q100 300 60 320Z" fill="none" stroke="var(--twig)" stroke-width="8" stroke-linecap="round"></path>
+          <path d="M80 305 Q130 265 230 265 Q330 265 380 305" fill="none" stroke="var(--twig)" stroke-width="6" stroke-linecap="round" opacity="0.6"></path>
 
-            /* ---------- TESTIMONIALS ---------- */
-            .testimonials{ background: var(--pine); border-radius: 60px; margin: 0 20px; color: var(--egg); }
-            .testimonials .section-head h2, .testimonials .eyebrow{ color: var(--egg); }
-            .testimonials .eyebrow{ color: var(--sun); }
-            .testi-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap:24px; }
-            .testi-card{ background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius-md); padding: 28px; transition: background 0.2s ease, transform 0.2s ease; }
-            .testi-card:hover { background: rgba(255,255,255,0.1); transform: scale(1.02); }
-            .testi-card p.quote{ font-size:1rem; margin-bottom:18px; color: #EAF3EE; font-style: italic; }
-            .testi-name{ font-weight:800; font-family:'Baloo 2'; color: var(--sun); }
-            .testi-role{ font-size:0.8rem; color: var(--sky); opacity:0.85; }
+          <!-- left chick -->
+          <g class="chick-left">
+            <path d="M136 262 q-16 -8 -24 6 q13 6 24 1Z" fill="var(--sky-deep)"></path>
+            <circle cx="172" cy="272" r="34" fill="var(--sky-deep)"></circle>
+            <path d="M160 236 l6 -14 l7 12Z" fill="var(--sky-deep)"></path>
+            <circle cx="184" cy="260" r="6.4" fill="#fff"></circle>
+            <circle cx="185.6" cy="260.8" r="3.2" fill="#2B3630"></circle>
+            <path d="M195 267 l16 5 l-15 8Z" fill="var(--sun)"></path>
+          </g>
 
-            /* ---------- CONTACT & TOUR ---------- */
-            .contact-wrap{ display:grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
-            .contact-card{ background: var(--egg); border-radius: var(--radius-lg); padding: 40px; box-shadow: var(--shadow); transition: transform 0.3s ease; }
-            .contact-card:hover { transform: translateY(-2px); }
-            .info-group { margin-top: 24px; }
-            .info-item { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+          <!-- center chick -->
+          <g class="chick-center">
+            <path d="M255 250 q20 -10 29 7 q-16 7 -29 1Z" fill="var(--coral)"></path>
+            <circle cx="230" cy="262" r="42" fill="var(--coral)"></circle>
+            <path d="M216 218 l7 -17 l9 15Z" fill="var(--coral)"></path>
+            <circle cx="216" cy="248" r="7.4" fill="#fff"></circle>
+            <circle cx="214.2" cy="249" r="3.7" fill="#2B3630"></circle>
+            <path d="M203 256 l-19 6 l18 9Z" fill="var(--sun)"></path>
+          </g>
 
-            .info-icon { font-size: 1.3rem; background: var(--sky); width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-            .info-item:hover .info-icon { transform: scale(1.12) rotate(-8deg); background: var(--sky-deep); }
-            .info-details p { font-size: 0.85rem; color: #606060; }
-            .info-details strong { font-size: 1.05rem; }
-            .info-details a { transition: color 0.2s ease; }
-            .info-details a:hover { color: var(--coral); }
+          <!-- right chick -->
+          <g class="chick-right">
+            <path d="M330 264 q16 -9 25 4 q-13 7 -25 2Z" fill="var(--sun)"></path>
+            <circle cx="296" cy="276" r="32" fill="var(--sun)"></circle>
+            <path d="M285 242 l5.5 -13 l6.5 11Z" fill="var(--sun)"></path>
+            <circle cx="284.5" cy="266" r="6" fill="#fff"></circle>
+            <circle cx="283" cy="266.8" r="3" fill="#2B3630"></circle>
+            <path d="M274 273 l-15 5 l14.5 7Z" fill="var(--coral)"></path>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
 
-            .form-group { margin-bottom: 18px; }
-            .form-group label { display: block; font-weight: 700; margin-bottom: 6px; font-size: 0.9rem; }
-            .form-control { width: 100%; padding: 12px 16px; border: 2px solid #e2e8f0; border-radius: var(--radius-md); font-family: inherit; font-size: 0.95rem; transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
-            .form-control:focus { outline: none; border-color: var(--pine); box-shadow: 0 0 0 4px rgba(18,150,111,0.12); transform: translateX(2px); }
+  <section id="programs" class="programs">
+    <div class="wrap">
+      <div class="section-head center animate-fade-up">
+        <span class="eyebrow">Our Pathways</span>
+        <h2>Programs Tailored to Every Development Stage</h2>
+        <p>We blend structured curriculum tracks with play-based routines engineered for growth milestones.</p>
+      </div>
+      
+     <div class="egg-grid">
 
-            .btn-submit { background: var(--pine); color: #fff; width: 100%; padding: 14px; border: none; border-radius: 999px; font-family: 'Baloo 2'; font-size: 1.15rem; font-weight: 700; cursor: pointer; box-shadow: 0 8px 20px rgba(18,150,111,0.2); transition: background .2s ease, transform .2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow .2s ease; }
-            .btn-submit:hover { background: var(--pine-light); transform: translateY(-2px); box-shadow: 0 12px 24px rgba(18,150,111,0.3); }
+  <div class="egg-card animate-fade-up delay-1">
+    <div class="egg-icon" style="background: var(--lavender);">🎨</div>
+    <h3>Toddler Track</h3>
+    <div class="egg-age">15 mos — 3 yrs</div>
+    <p>Active tactile immersion, motor dexterity exercises, and vocal socialization tools.</p>
+  </div>
 
-            footer { background: var(--ink); color: #b3c3ba; padding: 45px 0; font-size: 0.9rem; text-align: center; }
-            footer p { margin-top: 6px; }
-            footer a:hover { color: var(--sun); }
+  <div class="egg-card animate-fade-up delay-2">
+    <div class="egg-icon" style="background: var(--mint);">🚀</div>
+    <h3>Preschool Prep</h3>
+    <div class="egg-age">3 yrs — 5 yrs</div>
+    <p>Kindergarten foundations covering logic patterns, phonic matching, and team play games.</p>
+  </div>
 
-            @media(max-width: 992px){
-                .hero-grid, .contact-wrap, .about-grid { grid-template-columns: 1fr; }
-                .egg-grid, .testi-grid { grid-template-columns: 1fr; }
-                .trust-strip { grid-template-columns: repeat(2, 2fr); }
-            }
-        </style>
-    </head>
-    <body>
+  <!-- NEW: Tutions moved to last -->
+  <div class="egg-card animate-fade-up delay-3">
+    <div class="egg-icon" style="background: var(--blush);">📚</div>
+    <h3>Tutions</h3>
+    <div class="egg-age">All Ages</div>
+    <p>Personalized academic support, homework guidance, and foundational skill-building.</p>
+  </div>
 
-        <header>
-            <div class="nav">
-                <div class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
-                    <!-- SVG Vector Layout of Happy Nest Daycare Brand Identity -->
-                    <svg class="logo-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22 48 L50 20 L78 48 L71 48 L71 78 L29 78 L29 48 Z" fill="#FFFDF9" stroke="#5cbbf2" stroke-width="2.5"/>
-                        <path d="M18 50 L50 17 L82 50" stroke="#5cbbf2" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <rect x="44" y="40" width="12" height="12" rx="1.5" fill="#5cbbf2"/>
-                        <path d="M44 46 H56 M50 40 V52" stroke="#FFFDF9" stroke-width="1.2"/>
-                        <path d="M50 31 C48.5 28.5 45.5 28.5 45.5 31 C45.5 33.5 50 36.5 50 36.5 C50 36.5 54.5 33.5 54.5 31 C54.5 28.5 51.5 28.5 50 31 Z" fill="#ff6b81"/>
-                        <path d="M14 42 Q22 55 28 62" stroke="#8a5a36" stroke-width="2.5" stroke-linecap="round"/>
-                        <path d="M16 46 Q13 44 15 41 Z" fill="#7ebd41"/>
-                        <path d="M22 68 C22 84, 78 84, 78 68 C74 62, 26 62, 22 68 Z" fill="#dda86d" stroke="#784a25" stroke-width="2.5"/>
-                        <path d="M24 69 Q50 82 76 69 M27 73 Q50 85 73 73" stroke="#784a25" stroke-width="1.5" stroke-linecap="round"/>
-                        <circle cx="37" cy="61" r="10" fill="#ff8da1"/>
-                        <path d="M28 60 Q23 61 28 67 Z" fill="#ff6b81"/>
-                        <circle cx="34" cy="58" r="1" fill="#222"/>
-                        <polygon points="35,60 39,59 36,62" fill="#ffb81c"/>
-                        <circle cx="50" cy="59" r="11" fill="#ffd13b"/>
-                        <circle cx="46" cy="56" r="1.2" fill="#222"/>
-                        <circle cx="54" cy="56" r="1.2" fill="#222"/>
-                        <polygon points="48,59 52,59 50,62" fill="#ff6b81"/>
-                        <circle cx="63" cy="61" r="10" fill="#69c5f0"/>
-                        <path d="M72 60 Q77 61 72 67 Z" fill="#3197d6"/>
-                        <circle cx="61" cy="58" r="1" fill="#222"/>
-                        <polygon points="61,60 65,59 62,62" fill="#dda86d"/>
-                    </svg>
-                    <div class="logo-text-group">
-                        <span class="logo-text">Happy Nest</span>
-                        <span class="logo-caption">Daycare</span>
-                    </div>
-                </div>
-                <nav class="nav-links">
-                    <a href="#home">Home</a>
-                    <a href="#programs">Programs</a>
-                    <a href="#about">About Us</a>
-                    <!--<a href="#testimonials">Testimonials</a>-->
-                    <a href="#tour" class="nav-cta">Book a Tour</a>
-                </nav>
+</div>
+
+      <!-- Daycare Timeline Infrastructure -->
+      <div class="schedule-container animate-scale-in delay-2">
+        <h3>Our Daily Routine</h3>
+        <div class="day-timeline">
+          <div class="timeline-track">
+            
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <span class="tl-time">6:30 – 8:30 AM</span>
+              <h4>Soft landing</h4>
+              <p>Quiet arrival, breakfast, and free play while the nest fills up.</p>
             </div>
-        </header>
 
-        <section id="home" class="hero">
-            <div class="hero-grid">
-                <div class="hero-content align-fade-up">
-                    <span class="eyebrow">Welcome to Happy Nest</span>
-                    <h1>A Nurturing Space to <span class="accent">Grow &amp; Shine</span></h1>
-                    <p class="tagline">“A Happy Place to Grow, Learn &amp; Shine”</p>
-                    <p class="lead">We provide a secure, affectionate, and enriching learning atmosphere that makes early education feel like a secondary home base.</p>
-                    <div class="hero-ctas">
-                        <a href="#tour" class="btn-primary">Schedule a Tour</a>
-                        <a href="#programs" class="btn-ghost">Our Schedule</a>
-                    </div>
-                    <div class="trust-strip">
-                        <div class="trust-item"><p class="num">100%</p><p class="label">Certified Care</p></div>
-                        <div class="trust-item"><p class="num">1:5</p><p class="label">Infant Ratio</p></div>
-                        <div class="trust-item"><p class="num">Safe</p><p class="label">Fenced Yard</p></div>
-                        <div class="trust-item"><p class="num">Healthy</p><p class="label">Nutritious Meals</p></div>
-                    </div>
-                </div>
-
-                <div class="hero-art animate-scale-in delay-1">
-                    <svg class="nest-float" viewBox="0 0 460 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of three chicks in a nest">
-                        <circle cx="330" cy="80" r="60" fill="var(--sun)" opacity="0.9"></circle>
-                        <g stroke="var(--sun)" stroke-width="4" stroke-linecap="round" opacity="0.7">
-                            <line x1="330" y1="0" x2="330" y2="18"></line>
-                            <line x1="410" y1="30" x2="398" y2="42"></line>
-                            <line x1="440" y1="80" x2="422" y2="80"></line>
-                        </g>
-                        <ellipse cx="230" cy="330" rx="190" ry="55" fill="var(--twig)" opacity="0.16"></ellipse>
-                        <path d="M60 320 Q100 250 230 250 Q360 250 400 320 Q360 300 230 300 Q100 300 60 320Z" fill="none" stroke="var(--twig)" stroke-width="8" stroke-linecap="round"></path>
-                        <path d="M80 305 Q130 265 230 265 Q330 265 380 305" fill="none" stroke="var(--twig)" stroke-width="6" stroke-linecap="round" opacity="0.6"></path>
-
-                        <!-- left chick -->
-                        <g class="chick-left">
-                            <path d="M136 262 q-16 -8 -24 6 q13 6 24 1Z" fill="var(--sky-deep)"></path>
-                            <circle cx="172" cy="272" r="34" fill="var(--sky-deep)"></circle>
-                            <path d="M160 236 l6 -14 l7 12Z" fill="var(--sky-deep)"></path>
-                            <circle cx="184" cy="260" r="6.4" fill="#fff"></circle>
-                            <circle cx="185.6" cy="260.8" r="3.2" fill="#2B3630"></circle>
-                            <path d="M195 267 l16 5 l-15 8Z" fill="var(--sun)"></path>
-                        </g>
-
-                        <!-- center chick -->
-                        <g class="chick-center">
-                            <path d="M255 250 q20 -10 29 7 q-16 7 -29 1Z" fill="var(--coral)"></path>
-                            <circle cx="230" cy="262" r="42" fill="var(--coral)"></circle>
-                            <path d="M216 218 l7 -17 l9 15Z" fill="var(--coral)"></path>
-                            <circle cx="216" cy="248" r="7.4" fill="#fff"></circle>
-                            <circle cx="214.2" cy="249" r="3.7" fill="#2B3630"></circle>
-                            <path d="M203 256 l-19 6 l18 9Z" fill="var(--sun)"></path>
-                        </g>
-
-                        <!-- right chick -->
-                        <g class="chick-right">
-                            <path d="M330 264 q16 -9 25 4 q-13 7 -25 2Z" fill="var(--sun)"></path>
-                            <circle cx="296" cy="276" r="32" fill="var(--sun)"></circle>
-                            <path d="M285 242 l5.5 -13 l6.5 11Z" fill="var(--sun)"></path>
-                            <circle cx="284.5" cy="266" r="6" fill="#fff"></circle>
-                            <circle cx="283" cy="266.8" r="3" fill="#2B3630"></circle>
-                            <path d="M274 273 l-15 5 l14.5 7Z" fill="var(--coral)"></path>
-                        </g>
-                    </svg>
-                </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <span class="tl-time">9:00 – 10:30 AM</span>
+              <h4>Morning learning circle</h4>
+              <p>Songs, stories, and age-matched activities led by your child's primary caregiver.</p>
             </div>
-        </section>
 
-        <section id="programs" class="programs">
-            <div class="wrap">
-                <div class="section-head center animate-fade-up">
-                    <span class="eyebrow">Our Pathways</span>
-                    <h2>Programs Tailored to Every Development Stage</h2>
-                    <p>We blend structured curriculum tracks with play-based routines engineered for growth milestones.</p>
-                </div>
-
-                <div class="egg-grid">
-
-                    <div class="egg-card animate-fade-up delay-1">
-                        <div class="egg-icon" style="background: var(--lavender);">🎨</div>
-                        <h3>Toddler Track</h3>
-                        <div class="egg-age">15 mos — 3 yrs</div>
-                        <p>Active tactile immersion, motor dexterity exercises, and vocal socialization tools.</p>
-                    </div>
-
-                    <div class="egg-card animate-fade-up delay-2">
-                        <div class="egg-icon" style="background: var(--mint);">🚀</div>
-                        <h3>Preschool Prep</h3>
-                        <div class="egg-age">3 yrs — 5 yrs</div>
-                        <p>Kindergarten foundations covering logic patterns, phonic matching, and team play games.</p>
-                    </div>
-
-                    <!-- NEW: Tutions moved to last -->
-                    <div class="egg-card animate-fade-up delay-3">
-                        <div class="egg-icon" style="background: var(--blush);">📚</div>
-                        <h3>Tutions</h3>
-                        <div class="egg-age">All Ages</div>
-                        <p>Personalized academic support, homework guidance, and foundational skill-building.</p>
-                    </div>
-
-                </div>
-
-                <!-- Daycare Timeline Infrastructure -->
-                <div class="schedule-container animate-scale-in delay-2">
-                    <h3>Our Daily Routine</h3>
-                    <div class="day-timeline">
-                        <div class="timeline-track">
-
-                            <div class="tl-item">
-                                <div class="tl-dot"></div>
-                                <span class="tl-time">8:00 – 9:00 AM</span>
-                                <h4>Soft landing</h4>
-                                <p>Quiet arrival, free play while the nest fills up and Handwash.</p>
-                            </div>
-
-                            <div class="tl-item">
-                                <div class="tl-dot"></div>
-                                <span class="tl-time">9:00 – 9:30 AM</span>
-                                <h4>Breakfast</h4>
-                                <p>A calm morning welcome followed by wholesome breakfast time and easygoing play while friends arrive.</p>
-                            </div>
-
-                            <div class="tl-item">
-                                <div class="tl-dot"></div>
-                                <span class="tl-time">9:30 – 10:30 AM</span>
-                                <h4>Morning learning circle</h4>
-                                <p>Songs, stories, and age-matched activities led by your child's primary caregiver.</p>
-                            </div>
-
-                            <div class="tl-item">
-                                <div class="tl-dot"></div>
-                                <span class="tl-time">10:30 – 11:45 AM</span>
-                                <h4>Outdoor play</h4>
-                                <p>Fresh air, gross-motor games, and garden exploring in our fenced play yard.</p>
-                            </div>
-
-                            <div class="tl-item">
-                                <div class="tl-dot"></div>
-                                <span class="tl-time">11:45 – 12:30 PM</span>
-                                <h4>Lunch </h4>
-                                <p>A warm meal followed by nap or quiet time, honoring each child's own rhythm.</p>
-                            </div>
-
-                            <div class="tl-item">
-                                <div class="tl-dot"></div>
-                                <span class="tl-time">12:30 – 2:30 PM</span>
-                                <h4>Rest</h4>
-                                <p>Sleep time begins as our little birds curl into their nests, enjoying a soothing break wrapped in comfort and care.</p>
-                            </div>
-
-                            <div class="tl-item">
-                                <div class="tl-dot"></div>
-                                <span class="tl-time">2:30 – 3:15 PM</span>
-                                <h4>Snack</h4>
-                                <p>Clean hands, happy hearts, and a nourishing snack to refuel.</p>
-                            </div>
-
-
-                            <div class="tl-item">
-                                <div class="tl-dot"></div>
-                                <span class="tl-time">3:15 – 4:15 PM</span>
-                                <h4>Creative hour</h4>
-                                <p>Art, sensory bins, and pretend play — the messiest and most joyful part of the day.</p>
-                            </div>
-
-                            <div class="tl-item">
-                                <div class="tl-dot"></div>
-                                <span class="tl-time">4:15 – 5:00 PM</span>
-                                <h4>Wind-down &amp; pickup</h4>
-                                <p>Calm activities and a quick chat with families at pickup about the day's highlights.</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <span class="tl-time">10:30 – 11:45 AM</span>
+              <h4>Outdoor play</h4>
+              <p>Fresh air, gross-motor games, and garden exploring in our fenced play yard.</p>
             </div>
-        </section>
-        <br>
 
-        <section id="about" class="wrap">
-            <div class="about-grid">
-                <div class="animate-fade-up">
-                    <span class="eyebrow">About Happy Nest</span>
-                    <h2>Where Love and Learning Grow Seamlessly</h2>
-                    <p style="margin: 16px 0 24px; color: #4b584f; font-size: 1.05rem;">Happy Nest Daycare provides early learning options tailored to modern families. Under the guidance of our Director, Prabha Chellaboyana, we balance active outdoor time, nutritious meals, and structured social tracking to prepare kids for educational pathways.</p>
-                    <a href="#tour" class="btn-primary">Learn More In Person</a>
-                </div>
-                <div class="about-badge-grid animate-scale-in delay-1">
-                    <div class="about-badge">
-                        <span class="icon">🏡</span>
-                        <h3>Home Environment</h3>
-                        <p style="font-size:0.85rem; color:#606060; margin-top:4px;">Cozy setups designed for safe indoor discoveries.</p>
-                    </div>
-                    <div class="about-badge">
-                        <span class="icon">🌳</span>
-                        <h3>Fenced Playground</h3>
-                        <p style="font-size:0.85rem; color:#606060; margin-top:4px;">Gated play structures for active physical development.</p>
-                    </div>
-                    <div class="about-badge">
-                        <span class="icon">🥗</span>
-                        <h3>Balanced Diet</h3>
-                        <p style="font-size:0.85rem; color:#606060; margin-top:4px;">Healthy snacks and home-cooked morning fuel dishes.</p>
-                    </div>
-                    <div class="about-badge">
-                        <span class="icon">❤️</span>
-                        <h3>Loving Providers</h3>
-                        <p style="font-size:0.85rem; color:#606060; margin-top:4px;">Continuous updates shared transparently with families.</p>
-                    </div>
-                </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <span class="tl-time">12:00 – 2:30 PM</span>
+              <h4>Lunch &amp; rest</h4>
+              <p>A warm meal followed by nap or quiet time, honoring each child's own rhythm.</p>
             </div>
-        </section>
 
-        <!--<section id="testimonials" class="testimonials">-->
-        <!--  <div class="wrap">-->
-        <!--    <div class="section-head center animate-fade-up">-->
-        <!--      <span class="eyebrow">Parent Feedback</span>-->
-        <!--      <h2>Words From Our Community</h2>-->
-        <!--    </div>-->
-        <!--    <div class="testi-grid">-->
-        <!--      <div class="testi-card animate-fade-up delay-1">-->
-        <!--        <p class="quote">“Our daughter's verbal skills spiked remarkably within months of enrolling. The morning learning circle songs are her absolute favorite.”</p>-->
-        <!--        <div class="testi-name">Marcus K.</div>-->
-        <!--        <div class="testi-role">Parent of Toddler</div>-->
-        <!--      </div>-->
-        <!--      <div class="testi-card animate-fade-up delay-2">-->
-        <!--        <p class="quote">“Finding a child care facility that balances genuine affection with a fenced outdoor yard was tough until we toured Happy Nest.”</p>-->
-        <!--        <div class="testi-name">Elena R.</div>-->
-        <!--        <div class="testi-role">Parent of Infant</div>-->
-        <!--      </div>-->
-        <!--      <div class="testi-card animate-fade-up delay-3">-->
-        <!--        <p class="quote">“The creative afternoon art hour gives me complete confidence that my child is playing, staying active, and socializing well.”</p>-->
-        <!--        <div class="testi-name">David L.</div>-->
-        <!--        <div class="testi-role">Parent of Preschooler</div>-->
-        <!--      </div>-->
-        <!--    </div>-->
-        <!--  </div>-->
-        <!--</section>-->
-        <br>
-        <section id="tour" class="wrap">
-            <div class="contact-wrap">
-                <div class="animate-fade-up">
-                    <span class="eyebrow">Visit Happy Nest</span>
-                    <h2>Ready to See Our Nest in Action?</h2>
-                    <p style="margin: 14px 0 24px; color: #4b584f; font-size:1.05rem;">Schedule an on-site walkthrough to inspect our classrooms, evaluate our gated yard safety, and meet our providers.</p>
-
-                    <div class="info-group">
-                        <div class="info-item">
-                            <div class="info-icon">👤</div>
-                            <div class="info-details">
-                                <p>Daycare Director</p>
-                                <strong>Pratyusha Guduri</strong>
-                                <br>
-                                <strong>Prabha Chellaboyana</strong>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon">📞</div>
-                            <div class="info-details">
-                                <p>Direct Call / Support</p>
-                                <strong><a href="tel:2899392289">289-939-2289</a></strong>
-                                <br>
-                                <strong><a href="tel:4168802453">416-880-2453</a></strong>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon">✉️</div>
-                            <div class="info-details">
-                                <p>Email Correspondence</p>
-                                <strong><a href="mailto:prabha.chellaboyana@gmail.com">prabha.chellaboyana@gmail.com</a></strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-card animate-scale-in delay-1">
-                    <h3 style="font-size:1.5rem; margin-bottom:20px; color: var(--twig-dark);">Request a Tour Date</h3>
-                    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out to Happy Nest! Prabha Chellaboyana will contact you shortly.');">
-                        <div class="form-group">
-                            <label>Parent/Guardian Name</label>
-                            <input type="text" class="form-control" required placeholder="Jane Doe">
-                        </div>
-                        <div class="form-group">
-                            <label>Email Address</label>
-                            <input type="email" class="form-control" required placeholder="jane@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label>Target Enrollment Timeline</label>
-                            <select class="form-control">
-                                <option>Immediate Enrollment</option>
-                                <option>Next 1-3 Months</option>
-                                <option>Next 3-6 Months</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn-submit">Submit Request</button>
-                    </form>
-                </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <span class="tl-time">3:00 – 5:00 PM</span>
+              <h4>Creative hour</h4>
+              <p>Art, sensory bins, and pretend play — the messiest and most joyful part of the day.</p>
             </div>
-        </section>
-        <br>
-        <footer>
-            <div class="wrap">
-                <p><strong>Happy Nest Daycare &copy; 2026</strong> — Where Love and Learning Grow.</p>
-                <p style="font-size:0.8rem; opacity:0.7;">Director: Prabha Chellaboyana &bull; <a href="tel:2899392289">289-939-2289</a> &bull; <a href="mailto:prabha.chellaboyana@gmail.com">prabha.chellaboyana@gmail.com</a></p>
-            </div>
-        </footer>
 
-    </body>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <span class="tl-time">5:00 – 6:00 PM</span>
+              <h4>Wind-down &amp; pickup</h4>
+              <p>Calm activities and a quick chat with families at pickup about the day's highlights.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<br>
+  <section id="about" class="wrap">
+    <div class="about-grid">
+      <div class="animate-fade-up">
+        <span class="eyebrow">About Happy Nest</span>
+        <h2>Where Love and Learning Grow Seamlessly</h2>
+        <p style="margin: 16px 0 24px; color: #4b584f; font-size: 1.05rem;">Happy Nest Daycare provides early learning options tailored to modern families. Under the guidance of our Director, Prabha Chellaboyana, we balance active outdoor time, nutritious meals, and structured social tracking to prepare kids for educational pathways.</p>
+        <a href="#tour" class="btn-primary">Learn More In Person</a>
+      </div>
+      <div class="about-badge-grid animate-scale-in delay-1">
+        <div class="about-badge">
+          <span class="icon">🏡</span>
+          <h3>Home Environment</h3>
+          <p style="font-size:0.85rem; color:#606060; margin-top:4px;">Cozy setups designed for safe indoor discoveries.</p>
+        </div>
+        <div class="about-badge">
+          <span class="icon">🌳</span>
+          <h3>Fenced Playground</h3>
+          <p style="font-size:0.85rem; color:#606060; margin-top:4px;">Gated play structures for active physical development.</p>
+        </div>
+        <div class="about-badge">
+          <span class="icon">🥗</span>
+          <h3>Balanced Diet</h3>
+          <p style="font-size:0.85rem; color:#606060; margin-top:4px;">Healthy snacks and home-cooked morning fuel dishes.</p>
+        </div>
+        <div class="about-badge">
+          <span class="icon">❤️</span>
+          <h3>Loving Providers</h3>
+          <p style="font-size:0.85rem; color:#606060; margin-top:4px;">Continuous updates shared transparently with families.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--<section id="testimonials" class="testimonials">-->
+  <!--  <div class="wrap">-->
+  <!--    <div class="section-head center animate-fade-up">-->
+  <!--      <span class="eyebrow">Parent Feedback</span>-->
+  <!--      <h2>Words From Our Community</h2>-->
+  <!--    </div>-->
+  <!--    <div class="testi-grid">-->
+  <!--      <div class="testi-card animate-fade-up delay-1">-->
+  <!--        <p class="quote">“Our daughter's verbal skills spiked remarkably within months of enrolling. The morning learning circle songs are her absolute favorite.”</p>-->
+  <!--        <div class="testi-name">Marcus K.</div>-->
+  <!--        <div class="testi-role">Parent of Toddler</div>-->
+  <!--      </div>-->
+  <!--      <div class="testi-card animate-fade-up delay-2">-->
+  <!--        <p class="quote">“Finding a child care facility that balances genuine affection with a fenced outdoor yard was tough until we toured Happy Nest.”</p>-->
+  <!--        <div class="testi-name">Elena R.</div>-->
+  <!--        <div class="testi-role">Parent of Infant</div>-->
+  <!--      </div>-->
+  <!--      <div class="testi-card animate-fade-up delay-3">-->
+  <!--        <p class="quote">“The creative afternoon art hour gives me complete confidence that my child is playing, staying active, and socializing well.”</p>-->
+  <!--        <div class="testi-name">David L.</div>-->
+  <!--        <div class="testi-role">Parent of Preschooler</div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <!--</section>-->
+<br>
+  <section id="tour" class="wrap">
+    <div class="contact-wrap">
+      <div class="animate-fade-up">
+        <span class="eyebrow">Visit Happy Nest</span>
+        <h2>Ready to See Our Nest in Action?</h2>
+        <p style="margin: 14px 0 24px; color: #4b584f; font-size:1.05rem;">Schedule an on-site walkthrough to inspect our classrooms, evaluate our gated yard safety, and meet our providers.</p>
+        
+        <div class="info-group">
+          <div class="info-item">
+            <div class="info-icon">👤</div>
+            <div class="info-details">
+              <p>Daycare Director</p>
+              <strong>Prabha Chellaboyana</strong>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div class="info-details">
+              <p>Direct Call / Support</p>
+              <strong><a href="tel:2899392289">289-939-2289</a></strong>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">✉️</div>
+            <div class="info-details">
+              <p>Email Correspondence</p>
+              <strong><a href="mailto:prabha.chellaboyana@gmail.com">prabha.chellaboyana@gmail.com</a></strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <div class="contact-card">
+    <h3>Request a Tour</h3>
+
+    <form action="https://formspree.io/f/xyegbdjj" method="POST" id="tour-form">
+
+        <div class="form-group">
+            <label for="parent-name">Parent Name</label>
+            <input type="text" id="parent-name" name="parent_name" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="child-name">Child Name</label>
+            <input type="text" id="child-name" name="child_name" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="tour-date">Preferred Tour Date</label>
+            <input type="date" id="tour-date" name="tour_date" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+
+        <button type="submit" class="btn-submit">Request Tour</button>
+    </form>
+</div>
+
+<script>
+document.getElementById('tour-form').addEventListener('submit', async function(e) {
+    e.preventDefault(); // Stop redirect
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    // Send form data to Formspree without redirect
+    await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+    });
+
+    alert("Thank you for reaching out to Happy Nest! Your tour request has been sent. We will contact you shortly.");
+
+    form.reset(); // Optional: clear form after submit
+});
+</script>
+
+    </div>
+  </section>
+<br>
+  <footer>
+    <div class="wrap">
+      <p><strong>Happy Nest Daycare &copy; 2026</strong> — Where Love and Learning Grow.</p>
+      <p style="font-size:0.8rem; opacity:0.7;">Director: Prabha Chellaboyana &bull; <a href="tel:2899392289">289-939-2289</a> &bull; <a href="mailto:prabha.chellaboyana@gmail.com">prabha.chellaboyana@gmail.com</a></p>
+    </div>
+  </footer>
+
+</body>
 </html>
